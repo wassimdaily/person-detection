@@ -1,0 +1,7 @@
+numpy==1.14.5
+tensorflow==1.14.0
+opencv-python
+pillow
+requests
+matplotlib
+imutils
