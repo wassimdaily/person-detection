@@ -31,3 +31,4 @@ storage_image_height = int(os.getenv("PPE_STORAGE_IMAGE_HEIGHT", 360))
 # Input Type, ["camera", "file"]
 input_type = os.getenv("PPE_INPUT_TYPE", "file")
 
+
