@@ -21,6 +21,10 @@ import glob
 #path = "./Pictures/"
 #for file in glob.glob(path):
 #   print(file)
+img = []
+for img in glob.glob("/home/hydro/person_detection-master/shape-detection/determining-object-color/Pictures*.jpg"):
+	image= cv2.imread(img)
+	img.append(image)
 image= cv2.imread('example_shapes.png')
 #image = cv2.imread(args["image"])
 resized = imutils.resize(image, width=300)
@@ -67,11 +71,10 @@ for c in cnts:
 
 	# show the output image
 	cv2.imshow("Image", image)
-  print ("Detected color is "+ text)
-  pic_name = "firstframe" + str(i) + ".jpg"
-  cv2.imwrite("./images/" + pic_name , o_frame)
-  with open("./Pictures/" + pic_name, 'rb') as
-  if cv2.waitKey(1) & 0xFF == ord('q'):
-  
-                        run_flag.value = 0
-                        break
+	print ("Detected color is "+ text)
+	pic_name = "firstframe" + str(i) + ".jpg"
+	cv2.imwrite("./images/" + pic_name , o_frame)
+	with open("./Pictures/" + pic_name, 'rb') as
+	if cv2.waitKey(1) & 0xFF == ord('q'):
+		run_flag.value = 0
+		break
