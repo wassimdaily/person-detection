@@ -13,7 +13,7 @@ if (!$conn) {
 echo "Connected successfully";
 
 //Setup our query 
-$query = "SELECT * FROM $my_table";     
+$query = "SELECT * FROM my_table";     
 
 //Run the Query 
 $result = mysql_query($query);
@@ -23,7 +23,7 @@ $result = mysql_query($query);
 
 if($result) 
     {   while($row = mysql_fetch_array($result))   
-        {     $name = $row["$yourfield"];     
+        {     $name = $row["name"];     
               echo "Name: " . $name; 
    } }   
 
